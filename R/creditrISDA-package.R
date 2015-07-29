@@ -14,6 +14,9 @@
 #' @docType package
 #' 
 #' @import Rcpp
+#' @import xts
+#' @import zoo
+#' @import quantmod
 #' 
 #' @useDynLib creditrISDA
 #' @exportPattern "^[[:alpha:]]+"
