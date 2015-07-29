@@ -14,8 +14,8 @@ spread.to.upfront(x, currency.var = "currency", notional = 1e+07,
 
 \item{currency.var}{character, column in x containing currency.}
 
-\item{notional}{numeric, the notional amount for all pricing if there isn't a
-notional.var}
+\item{notional}{is the amount of the underlying asset on which the
+payments are based. Default is 10000000, i.e. 10MM.}
 
 \item{date.var}{character, column in x containing date variable.}
 
@@ -35,18 +35,6 @@ model standard recovery rate asscumption is 0.4.}
 \item{isPriceClean}{refers to the type of upfront calculated. It is
        boolean. When \code{TRUE}, calculate principal only. When
        \code{FALSE}, calculate principal + accrual.}
-
-\item{notional.var}{character, column in x containing the amount of the
-underlying asset on which the payments are based.}
-
-\item{recovery}{numeric, the recovery rate for all pricing if there isn't a
-recovery.var}
-
-\item{notional}{is the amount of the underlying asset on which the
-payments are based. Default is 10000000, i.e. 10MM.}
-
-\item{recovery.var}{f column in x containing recovery
-rates in decimal.}
 }
 \value{
 vector of upfront values (with accrual) in the same order

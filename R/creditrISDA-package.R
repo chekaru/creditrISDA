@@ -13,6 +13,8 @@
 #' @name creditrISDA
 #' @docType package
 #' 
+#' @import Rcpp
+#' 
 #' @useDynLib creditrISDA
 #' @exportPattern "^[[:alpha:]]+"
 NULL

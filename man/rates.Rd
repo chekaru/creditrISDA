@@ -79,9 +79,6 @@ rates[rates$currency == "JPY",]
 
 rates[rates$currency == "USD" & rates$date == "2005-10-01",]
 }
-\seealso{
-\code{\link{download.FRED}} \code{\link{download.markit}} \code{\link{build.rates}}
-}
 \keyword{datasets,}
 \keyword{interest}
 \keyword{rates}

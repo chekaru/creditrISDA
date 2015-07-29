@@ -34,22 +34,14 @@ model standard recovery rate asscumption is 0.4.}
 
 \item{isPriceClean}{a boolean variable indicating whether the upfront is clean or dirty}
 
-\item{notional}{numeric, the notional amount for all pricing if there isn't a
-notional.var}
+\item{notional}{numeric variable indicating the notional value of the CDS contract}
 
 \item{payAccruedAtStart}{whether pay at start date the accrual amount}
 
 \item{payAccruedOnDefault}{whether pay in default scenario the accrual amount}
 
-\item{spread.var}{character, column in x containing spread in basis points.}
-
-\item{notional.var}{character, column in x containing the amount of the
-underlying asset on which the payments are based.}
-
 \item{recovery}{numeric, the recovery rate for all pricing if there isn't a
 recovery.var}
-
-\item{notional}{numeric variable indicating the notional value of the CDS contract}
 }
 \value{
 a numeric indicating the spread.

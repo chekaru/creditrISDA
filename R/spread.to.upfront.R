@@ -15,16 +15,8 @@
 #'   seller on an annual basis.
 #' @param recovery.var character, column in x containing recovery rates. ISDA
 #'   model standard recovery rate asscumption is 0.4.
-#' @param notional.var character, column in x containing the amount of the 
-#'   underlying asset on which the payments are based.
-#' @param notional numeric, the notional amount for all pricing if there isn't a
-#'   notional.var
-#' @param recovery numeric, the recovery rate for all pricing if there isn't a 
-#'   recovery.var
 #' @param notional is the amount of the underlying asset on which the
 #'        payments are based. Default is 10000000, i.e. 10MM.
-#' @param recovery.var f column in x containing recovery 
-#'        rates in decimal.
 #' @param isPriceClean refers to the type of upfront calculated. It is
 #'        boolean. When \code{TRUE}, calculate principal only. When
 #'        \code{FALSE}, calculate principal + accrual.
