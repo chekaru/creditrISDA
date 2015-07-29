@@ -17,4 +17,4 @@ src/*so
 src/*.o
 src/*.dll
 src/symbols.rds
-credit.Rcheck
+creditr.Rcheck
