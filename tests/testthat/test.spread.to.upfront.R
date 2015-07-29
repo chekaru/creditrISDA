@@ -4,8 +4,6 @@ context("Test spread.to.upfront")
 ## our upront functions for different data with results from markit.com using
 ## the same data
 
-library(creditr)
-
 test_that("test for spread.to.upfront", {
   
   ## test case to see if our function gives the same result as markit.com

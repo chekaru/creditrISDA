@@ -1,4 +1,3 @@
 library(testthat)
-library(creditr)
 
-test_check("creditr")
+test_check("creditrISDA")
