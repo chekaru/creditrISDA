@@ -1,13 +1,20 @@
-# History files
 .Rhistory
-.Rapp.history
-
-# Example code in package build process
-*-Ex.R
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
+.RData
+.Rbuildignore
+*.Rproj*
+.Rproj.user
+vignettes/*.tex
+vignettes/*.log
+vignettes/*.gz
+vignettes/*.tex
+vignettes/*.toc
+vignettes/*.aux
+vignettes/*.bbl
+vignettes/*.blg
+vignettes/*.sty
 vignettes/*.pdf
+src/*so
+src/*.o
+src/*.dll
+src/symbols.rds
+credit.Rcheck
