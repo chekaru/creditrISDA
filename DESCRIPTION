@@ -1,7 +1,7 @@
 Package:     creditrISDA
 Version:     0.1-1
 Date:        2015-07-28
-Title:       Credit Default Swap
+Title:       R Wrapper for ISDA Standard Model for Evaluating Credit Default Swaps 
 Author:      c(person("Heidi", "Chen", role = c("aut"),
                 email = "s.heidi.chen@gmail.com"),
                 person("Yuanchu", "Dang", role = c("aut"),
@@ -17,14 +17,8 @@ Author:      c(person("Heidi", "Chen", role = c("aut"),
                 person("Miller Zijie", "Zhu", role = c("aut"),
                 email = "zijie.zhu@williams.com"))
 Depends:     R (>= 2.10)
-Imports:     quantmod,
-             devtools,
-             methods,
-             Rcpp (>= 0.10.6),
-             RCurl,
-             XML,
-             zoo,
-             xts
+Imports:     Rcpp (>= 0.10.6),
+             RCurl
 Suggests:    testthat
 Maintainer:  David Kane <dave.kane@gmail.com>
 License:     MIT
