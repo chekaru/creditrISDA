@@ -4,7 +4,23 @@
 #' a vector of upfront values. Note that all CDS in the data frame must be denominated in 
 #' the same currency.
 #' 
-#' @inheritParams CS10
+#' @param x data frame, contains all the relevant columns.
+#' @param date.var character, column in x containing date variable.
+#' @param currency.var character, column in x containing currency.
+#' @param maturity.var character, column in x containing maturity date.
+#' @param tenor.var character, column in x containing tenors.
+#' @param spread.var character, column in x containing spread in basis points.
+#' @param coupon.var character, column in x containing coupon rates in basis 
+#'   points. It specifies the payment amount from the protection buyer to the 
+#'   seller on an annual basis.
+#' @param recovery.var character, column in x containing recovery rates. ISDA
+#'   model standard recovery rate asscumption is 0.4.
+#' @param notional.var character, column in x containing the amount of the 
+#'   underlying asset on which the payments are based.
+#' @param notional numeric, the notional amount for all pricing if there isn't a
+#'   notional.var
+#' @param recovery numeric, the recovery rate for all pricing if there isn't a 
+#'   recovery.var
 #' @param notional is the amount of the underlying asset on which the
 #'        payments are based. Default is 10000000, i.e. 10MM.
 #' @param recovery.var f column in x containing recovery 
@@ -95,7 +111,7 @@ spread.to.upfront <- function(x,
                         isPriceClean_input = isPriceClean,
                         payAccruedOnDefault_input = TRUE,
                         notional = notional,
-                        PACKAGE = "creditr")
+                        PACKAGE = "creditrISDA")
   } 
   return(results)
 }
