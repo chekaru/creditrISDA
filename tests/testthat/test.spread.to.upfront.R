@@ -15,11 +15,11 @@ test_that("test for spread.to.upfront", {
   
   ## truth.1 <- 18624
   
-  result.1 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.1 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
-                                           tenor = 5,
-                                           spread = 105.8,
-                                           coupon = 100,
+                                           tenor    = 5,
+                                           spread   = 105.8,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE),
                                 isPriceClean = FALSE)
@@ -38,11 +38,11 @@ test_that("test for spread.to.upfront", {
   ## truth.2 <- -9444
   ## calculated value
   
-  result.2 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.2 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
-                                           tenor = 5,
-                                           spread = 100,
-                                           coupon = 100,
+                                           tenor    = 5,
+                                           spread   = 100,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -60,11 +60,11 @@ test_that("test for spread.to.upfront", {
   ## truth.3 <- -474755
   ## calculated value
   
-  result.3 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.3 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
-                                           tenor = 5,
-                                           spread = 105.8,
-                                           coupon = 200,
+                                           tenor    = 5,
+                                           spread   = 105.8,
+                                           coupon   = 200,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -81,11 +81,11 @@ test_that("test for spread.to.upfront", {
   ## truth.4 <- 265313
   ## calculated value
   
-  result.4 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.4 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
-                                           tenor = 5,
-                                           spread = 105.8,
-                                           coupon = 50,
+                                           tenor    = 5,
+                                           spread   = 105.8,
+                                           coupon   = 50,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -102,11 +102,11 @@ test_that("test for spread.to.upfront", {
   ## truth.5 <- 20718
   ## calculated value
   
-  result.5 <- spread.to.upfront(data.frame(date = as.Date("2014-04-15"),
+  result.5 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-15"),
                                            currency = "USD",
                                            maturity = as.Date("2019-06-20"),
-                                           spread = 105.8,
-                                           coupon = 100,
+                                           spread   = 105.8,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -123,11 +123,11 @@ test_that("test for spread.to.upfront", {
   ## truth.6 <- 16582
   #calculated value
   
-  result.6 <- spread.to.upfront(data.frame(date = as.Date("2014-04-29"),
+  result.6 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-29"),
                                            currency = "USD",
                                            maturity = as.Date("2019-06-20"),
-                                           spread = 105.8,
-                                           coupon = 100,
+                                           spread   = 105.8,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -143,11 +143,11 @@ test_that("test for spread.to.upfront", {
   ## truth.7 <- 17395
   #calculated value
   
-  result.7 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.7 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
                                            maturity = as.Date("2019-03-20"),
-                                           spread = 105.8,
-                                           coupon = 100,
+                                           spread   = 105.8,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -162,11 +162,11 @@ test_that("test for spread.to.upfront", {
   ## truth.8 <- 19836
   ## calculated value
   
-  result.8 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.8 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
                                            maturity = as.Date("2019-09-20"),
-                                           spread = 105.8,
-                                           coupon = 100,
+                                           spread   = 105.8,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
@@ -182,11 +182,11 @@ test_that("test for spread.to.upfront", {
   ## truth.9 <- 254985
   ## calculated value
   
-  result.9 <- spread.to.upfront(data.frame(date = as.Date("2014-04-22"),
+  result.9 <- spread.to.upfront(data.frame(date     = as.Date("2014-04-22"),
                                            currency = "USD",
-                                           tenor = 5,
-                                           spread = 155.8,
-                                           coupon = 100,
+                                           tenor    = 5,
+                                           spread   = 155.8,
+                                           coupon   = 100,
                                            recovery = 0.4,
                                            stringsAsFactors = FALSE), isPriceClean = FALSE)
   
