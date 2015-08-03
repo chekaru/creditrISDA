@@ -8,8 +8,6 @@
  * under the terms of the ISDA CDS Standard Model Public License.
  */
 
-#include <R.h>
-#include <Rdefines.h>
 #include <time.h>
 #include "cgeneral.h"
 #include "convert.h"
@@ -464,7 +462,6 @@ static TDateCacheEntry gDateCacheArray[] = {
 ** dates.
 ***************************************************************************
 */
-
 TDate JpmcdsDate
 (long year,  /* (I) Year */
  long month, /* (I) Month */
@@ -477,7 +474,6 @@ TDate JpmcdsDate
     TDate         date; /* returned */
 
     mdy.month = month;
-
     mdy.day   = day;
     mdy.year  = year;
 
@@ -486,8 +482,8 @@ TDate JpmcdsDate
         JpmcdsErrMsg ("%s: Failed.\n", routine);
         date = FAILURE;
     }
-    return date;
 
+    return date;
 }
 
 
