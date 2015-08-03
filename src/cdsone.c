@@ -75,7 +75,7 @@ EXPORT int JpmcdsCdsoneUpfrontCharge
     int         status    = FAILURE;
 
     TCurve           *flatSpreadCurve = NULL;
-    
+
     flatSpreadCurve = JpmcdsCleanSpreadCurve (
         today,
         discCurve,
@@ -94,9 +94,8 @@ EXPORT int JpmcdsCdsoneUpfrontCharge
         badDayConv,
         calendar);
 
-    if (flatSpreadCurve == NULL){
-      goto done;
-    }
+    if (flatSpreadCurve == NULL)
+        goto done;
       
     if (JpmcdsCdsPrice(today,
                        valueDate,
@@ -114,11 +113,9 @@ EXPORT int JpmcdsCdsoneUpfrontCharge
                        flatSpreadCurve,
                        recoveryRate,
                        payAccruedAtStart,
-                       upfrontCharge) != SUCCESS){
+                       upfrontCharge) != SUCCESS)
+        goto done;
 
-      
-      goto done;
-    }
     status = SUCCESS;
 
  done:

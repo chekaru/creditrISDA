@@ -64,7 +64,6 @@ EXPORT TCurve* JpmcdsBuildIRZeroCurve(
     if (cashDates  == NULL || swapDates  == NULL || cashRates  == NULL || swapRates  == NULL)
         goto done;
 
-
     /* Sort out cash and swap separately */
     for(i = 0; i < nInstr; i++)
     {
@@ -91,21 +90,15 @@ EXPORT TCurve* JpmcdsBuildIRZeroCurve(
         }
     }
 
-
-
     /* Initialize the zero curve */
     zcurveIni = JpmcdsNewTCurve(valueDate, 0, (double) 1L, JPMCDS_ACT_365F);
-    if (zcurveIni == NULL){
+    if (zcurveIni == NULL)
         goto done;
-	printf("zcurveIni...\n");
-    }
 
     /* Cash instruments */
     zcurveCash = JpmcdsZCCash(zcurveIni, cashDates, cashRates, nCash, mmDCC);
-    if (zcurveCash == NULL){
-	JpmcdsErrMsg("Cash Curve not available ... \n");
+    if (zcurveCash == NULL)
         goto done;
-    }
 
     /* Swap instruments */
     zcurveSwap = JpmcdsZCSwaps(zcurveCash,
@@ -120,11 +113,9 @@ EXPORT TCurve* JpmcdsBuildIRZeroCurve(
                             fwdLength,
                             badDayConv,
                             holidayFile);
-    if (zcurveSwap == NULL){
-      JpmcdsErrMsg("IR curve not available ... \n");
-      // printf("g...\n");
-      goto done;
-    }
+    if (zcurveSwap == NULL)
+        goto done;
+
     status = SUCCESS;
 
  done:
