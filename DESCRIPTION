@@ -20,7 +20,7 @@ Depends:     R (>= 2.10)
 Imports:     Rcpp (>= 0.10.6), xts, zoo, quantmod
 Suggests:    testthat
 Maintainer:  David Kane <dave.kane@gmail.com>
-License:     MIT + file LICENSE
+License:     ISDA CDS STANDARD MODEL PUBLIC LICENSE + file LICENSE
 LinkingTo:   Rcpp
 Description: creditrISDA package contains the C code of ISDA Standard Model, which is 
              developed for evaluating credit default swaps (CDS). After Big Bang Protocol 
