@@ -1,7 +1,7 @@
 Package:     creditrISDA
 Version:     0.1-1
 Date:        2015-07-28
-Title:       R Wrapper for ISDA Standard Model for Evaluating Credit Default Swaps 
+Title:       R Wrapper for ISDA CDS Standard Model for Evaluating Credit Default Swaps 
 Author:      c(person("Heidi", "Chen", role = c("aut"),
                 email = "s.heidi.chen@gmail.com"),
                 person("Yuanchu", "Dang", role = c("aut"),
