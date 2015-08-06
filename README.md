@@ -1,2 +1,2 @@
 # creditrISDA
-ISDA C-code model and R wrapper
+Open Source C-code of ISDA CDS STANDARD MODEL and R wrapper
